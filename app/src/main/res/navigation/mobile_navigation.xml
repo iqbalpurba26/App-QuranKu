@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.example.quranku.fragment.FragmentInfo"
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
+
+
+
+    <fragment
+        android:id="@+id/navigation_quran"
+        android:name="com.example.quranku.fragment.quran.FragmentListSurah"
+        android:label="Quran"
+        tools:layout="@layout/fragment_quran">
+        <action
+            android:id="@+id/action_navigation_quran_to_navigation_detail"
+            app:destination="@id/navigation_detail"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="com.example.quranku.fragment.quran.FragmentDetailSurah"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail_surah" >
+        <argument
+            android:name="surah"
+            app:argType="com.example.quranku.networking.Surah"
+            app:nullable="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.quranku.fragment.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_quran"
+            app:destination="@id/navigation_quran" />
+    </fragment>
+
+
+
+
+</navigation>

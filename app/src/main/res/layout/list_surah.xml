@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cvSurah"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/frame_surah"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/frame_list"
+            app:layout_constraintBottom_toBottomOf="@id/tv_tipeSurah"
+            app:layout_constraintTop_toTopOf="@id/tv_nameSurahIndo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_noSurah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_surah"
+            app:layout_constraintEnd_toEndOf="@+id/frame_surah"
+            app:layout_constraintStart_toStartOf="@id/frame_surah"
+            app:layout_constraintTop_toTopOf="@+id/frame_surah" />
+
+        <TextView
+            android:id="@+id/tv_nameSurahIndo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Alfatiha"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/frame_surah"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nameSurahArab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Bahasa Arab"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_nameSurahIndo" />
+
+        <TextView
+            android:id="@+id/tv_tipeSurah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/dm_sans"
+            android:text="Makkiyah"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@id/tv_nameSurahIndo"
+            app:layout_constraintTop_toBottomOf="@id/tv_nameSurahIndo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
