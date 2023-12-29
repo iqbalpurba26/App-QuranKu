@@ -11,11 +11,13 @@ import com.example.quranku.adapter.DetailSurahAdapter
 import com.example.quranku.databinding.FragmentDetailSurahBinding
 import com.example.quranku.networking.DetailSurah
 import com.example.quranku.networking.RetrofitClient
+import dagger.hilt.android.AndroidEntryPoint
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 
+@AndroidEntryPoint
 class FragmentDetailSurah: Fragment(R.layout.fragment_detail_surah) {
 
     private lateinit var binding:FragmentDetailSurahBinding

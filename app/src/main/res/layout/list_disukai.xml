@@ -67,17 +67,17 @@
             app:layout_constraintStart_toStartOf="@id/tv_nameSurahIndo"
             app:layout_constraintTop_toBottomOf="@id/tv_nameSurahIndo" />
 
-        <CheckBox
+        <ToggleButton
             android:id="@+id/like"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:background="@drawable/baseline_delete_forever_24"
             android:layout_marginTop="10dp"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn=""
             app:layout_constraintEnd_toEndOf="@id/tv_nameSurahArab"
             app:layout_constraintTop_toBottomOf="@id/tv_nameSurahArab"
             app:layout_constraintBottom_toBottomOf="parent"/>
-
 
 
 

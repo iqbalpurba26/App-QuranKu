@@ -7,6 +7,16 @@
 
 
     <fragment
+        android:id="@+id/navigation_like"
+        android:name="com.example.quranku.fragment.favorite.FragmentLike"
+        android:label="Disukai"
+        tools:layout="@layout/fragment_disukai" >
+        <argument
+            android:name="surah"
+            app:argType="com.example.quranku.networking.Surah" />
+    </fragment>
+
+    <fragment
         android:id="@+id/navigation_info"
         android:name="com.example.quranku.fragment.FragmentInfo"
         android:label="Info"
@@ -22,6 +32,9 @@
         <action
             android:id="@+id/action_navigation_quran_to_navigation_detail"
             app:destination="@id/navigation_detail"/>
+        <action
+            android:id="@+id/action_navigation_quran_to_navigation_like"
+            app:destination="@id/navigation_like" />
     </fragment>
 
 

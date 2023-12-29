@@ -7,7 +7,7 @@ import kotlinx.parcelize.Parcelize
 data class Surah(
     var arti:String?,
     val asma:String?,
-    val nomor:String?,
+    val nomor:String,
     val nama:String?,
     val type:String?
 ) : Parcelable

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.quranku.databinding.ListAyatBinding
 import com.example.quranku.networking.DetailSurah
 
+
 class DetailSurahAdapter(private val dataSet: ArrayList<DetailSurah>) :
     RecyclerView.Adapter<DetailSurahAdapter.ViewHolder>() {
 
