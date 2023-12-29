@@ -9,12 +9,6 @@ import org.jetbrains.annotations.NotNull
 @Entity(tableName = "favSurah")
 @Parcelize
 data class Favorite(
-//    @PrimaryKey
-//    @NotNull
-//    val nomor:String,
-//
-//    val asma:String?, val nama:String?, val type:String?, val arti:String?
-
     val arti:String?, val asma:String?,
     @PrimaryKey
     @NotNull
